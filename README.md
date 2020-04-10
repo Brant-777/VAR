@@ -9,7 +9,7 @@ The below findings are from using a timeseries data socurce to calcualte VAR(Val
 
 ## Preview
 
-[![VAR Preview](https://raw.githubusercontent.com/brant-777/AlgoTrade/master/img/AlgoTrade.png)]
+[![VAR Preview](https://raw.githubusercontent.com/brant-777/AlgoTrade/master/img/AlgoTrade.png)
 
 
 
