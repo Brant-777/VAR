@@ -9,7 +9,7 @@ The below findings are from using a timeseries data socurce to calcualte VAR(Val
 
 ## Preview
 
-[![VAR Preview](https://raw.githubusercontent.com/brant-777/AlgoTrade/master/img/AlgoTrade.png)
+[![VAR Preview]](https://raw.githubusercontent.com/brant-777/AlgoTrade/master/img/AlgoTrade.png)
 
 
 
@@ -18,6 +18,7 @@ The below findings are from using a timeseries data socurce to calcualte VAR(Val
 
 Percentage Change: 
 https://www.mathsisfun.com/numbers/percentage-change.html
+
 VAR(Value at Risk):
 https://www.investopedia.com/terms/v/var.asp
 https://blog.quantinsti.com/calculating-value-at-risk-in-excel-python/
