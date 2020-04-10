@@ -9,7 +9,7 @@ The below findings are from using a timeseries data socurce to calcualte VAR(Val
 
 ## Preview
 
-[![VAR Preview]](https://user-images.githubusercontent.com/21012044/79016792-d8476300-7b3d-11ea-8786-266680790438.png)
+[![VAR Preview]]("https://user-images.githubusercontent.com/21012044/79016792-d8476300-7b3d-11ea-8786-266680790438.png")
 
 
 
