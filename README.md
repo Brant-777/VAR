@@ -1,4 +1,4 @@
-# [Brant - VAR]
+# Brant - VAR
 
 
 
