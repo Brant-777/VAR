@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 20 08:07:35 2020
+
+@author: brant
+"""
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn
+import scipy.stats as scs
+import scipy.stats
+import yfinance as yf
+from tabulate import tabulate
+
+#import data frame and take percentage (pct) change on close of stock single asset
+df = yf.download('FB', start='2012-01-01', end='2018-01-31')
+df = df[['Close']]
+df['returns'] = df.Close.pct_change()
+
+#check if dataframe has NA's may introduce following drop NA from returns column (maybe...)
+#print(df)
+
+#calculate mean and standard devaiton of returns then plot normal curve against daily returns
+mean = np.mean(df['returns'])
+std_dev = np.std(df['returns'])
+
+#bins amount of frames within the historgram 
+#cacluation & ploting of cumulative histogram
+df['returns'].hist(bins=40, normed=True, histtype='stepfilled', alpha=0.5)
+x = np.linspace(mean - 3*std_dev, mean + 3*std_dev, 100)
+
+#reference to scipy methodlogy for continous norm distribution
+#https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html
+plt.plot(x,scs.norm.pdf(x,mean,std_dev), 'r')
+plt.show()
+
+#calculate z score
+VaR_90 = df['returns'].quantile(0.1)
+VaR_95 = df['returns'].quantile(0.05)
+VaR_99 = df['returns'].quantile(0.01)
+
+
+#print findings
+print(VaR_90)
+print(VaR_95)
+print(VaR_99)
+
+print(tabulate({'Confidence Level': ['90%','95%','99%'], 'Value at Risk':[VaR_90 ,VaR_95, VaR_99]}, headers='keys'))
