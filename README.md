@@ -4,7 +4,7 @@
 
 ## About
 
-The below findings are from using a timeseries data socurce to calcualte VAR(Value at Risk) over an investment period using Python. THe findings in this model are derived from using Numpy, Pandas, Matplotlib, Seaborn and Scipy. VAR(Value at Risk) is used to measure the risk of loss for single investment, time horizon and probablity. Finally the findings in the model display a negative VAR for Facebook which in turn shows it has a high chance of producing a profit/not normalized.
+The below findings are from using a timeseries data socurce to calcualte VAR(Value at Risk) over an investment period using Python. The findings in this model are derived from using Numpy, Pandas, Matplotlib, Seaborn and Scipy. VAR(Value at Risk) is used to measure the risk of loss for single investment, time horizon and probablity. Finally the findings in the model display a negative VAR for Facebook which in turn shows it has a high chance of producing a profit/not normalized.
 
 
 ## Preview
